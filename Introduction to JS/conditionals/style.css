@@ -3,13 +3,11 @@
     padding: 0;
 }
 
+
+
 .main{
     width: 100%;
-    height: 100vh;
-    background-image:url(./assets/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
+    height: auto;
 }
 
 .main #menu{
@@ -18,8 +16,12 @@
     height: 100%;
     color: whitesmoke;
     transition: all 0.7s;
-    position: relative;
+    position:fixed;
+    left: 0;
+    z-index: 5;
+    top:0;
     border-right: 1px solid grey;
+    
     
 }
 .main #menu ul{
@@ -35,7 +37,7 @@
 
 }
 .main #menu ul li i{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
 }
 .main #menu ul li:hover{
@@ -65,10 +67,16 @@
 }
 
 .main .main_area{
-    width: 100%;
+    width: calc(100% - 70px);
+    margin-left:70px;
+    background-image:url(./assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
 }
 
-.main .main_area nav{
+.main .main_area nav{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,12 +84,18 @@
     color: white;
     height: 70px;
     box-shadow: 0px 1px 3px black;
-    z-index: 99;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    margin: 0 auto;
+    
 }
 .main .main_area nav .forecast_title{
-    padding: 0 30px;
-    font-size: 1.5rem;
+    /* margin-left: 130px; */
+    font-size: 1.2rem;
     color: whitesmoke;
+    margin-left: 80px;
 }
 .main .main_area nav ul{
     display: flex;
@@ -93,42 +107,85 @@
 }
 .main .main_area nav ul li i{
     padding: 0 15px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 900;
     color: whitesmoke;
 }
-.main .main_area .weather{
-    
+.main .main_area .weather_title{
     position: relative;
-    top: 50%;
-    transform: translate(0, -150%);
+    top: 100px;
+    margin: 20px 0;
 }
-.main .main_area .weather h2{ 
-    
+.main .main_area .weather_title h2{ 
     color: black;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 10px 0;
 }
-.main .main_area .weather hr{ 
-    width: 20%;
+.main .main_area .weather_title hr{ 
+    width: 15%;
     height: 4px;
     border: none;
     background: #121245;
     margin: 10px auto;
 }
 
-.main .main_area .weather select{
+.main .main_area .weather_title select{
    position: relative;
    left: 50%;
    transform: translate(-50%, 0);
-   margin: 20px 0;
+   margin: 10px 0;
    padding: 10px 20px;
    background-color: transparent;
    border: 1px solid black;
    color: rgb(2, 2, 8);
-   width: 40%;
+   width: 30%;
+   font-size: 1.3rem;
+}
+.main .main_area .weather_title .display{
+    position: relative;
+    top: 60px;
+}
+.main .main_area .weather_title .display .display_row{
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ cursor: pointer;
+ width: 100%;
+ margin: 20px auto;
+ gap: 1rem;
+
+}
+.main .main_area .weather_title .display .display_row .col3{
+ width: 25%;
+ border: 1px solid #121245;
+ border-radius: 5px;
+ padding: 5px 0;
+ transition: all 0.5s;
+}
+.main .main_area .weather_title .display .display_row .col3 img{
+position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+}
+.main .main_area .weather_title .display .display_row .col3:hover{
+    background-color: #121245;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    scale: 1.0;
+   }
+
+
+
+/*INNER MAIN*/
+.main  .inner_main{
+    height: 50vh;
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    overflow-x: hidden;
+    text-align: center;
 }
 
 /*hamburger*/

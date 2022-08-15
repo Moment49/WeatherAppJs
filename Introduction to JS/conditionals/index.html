@@ -27,6 +27,7 @@
                 <li><i class="fa-solid fa-user-plus"></i></li>
                 <li><i class="fa-solid fa-gear"></i></li>
                 
+                
             </ul>
         </aside>
         <div class="main_area">
@@ -36,23 +37,51 @@
                 </div>
                 <ul>
                     <li><i class="fa-solid fa-rotate"></i></li>
-                    <li><i class="fa-solid fa-thumbtack"></i></li>
-                    <li><i class="fa-solid fa-star"></i><li>  
-                    <li><i class="fa-solid fa-ellipsis"></i></li>  
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>  
+                    <li><i class="fa-solid fa-thumbtack"></i></li>
+                    <li><i class="fa-solid fa-star"></i><li>   
+                     <select>
+                        <option>Theme</option>
+                        <option>dark</option>
+                        <option>light</option>
+                     </select>   
                 </ul>
             </nav>
-            <div class="weather">
-                <h2>Select Weather And See the ForeCast</h2>
+            <div class="weather_title">
+                <h2>Select the weather type today</h2>
                 <hr/>
-                <select>
-                    <option>Weather</option>
-                    <option>Weather</option>
-                    <option>Weather</option>
-                    <option>Weather</option>
+                <select id="weather">
+                    <option value="">-- Make a choice--</option>
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="snowing">Snowing</option>
+                    <option value="overcast">Overcast</option>
                 </select>
+                <h3></h3>
+                <div class="display">
+                    <div class="display_row">
+                        <div class="col3">
+                            <img src="./assets/sun-weather-forecast-glossy-icon-vector-425863-removebg-preview.png" width="170px"/>
+                            <h2>290C</h2>
+                        </div>
+                        <div class="col3">
+                            <img src="./assets/Rain-removebg-preview-removebg-preview.png" width="170px"/>
+                            <h2>-21C</h2>
+                        </div>
+                        <div class="col3">  
+                            <img src="./assets/sun-weather-forecast-glossy-icon-vector-425863-removebg-preview.png" width="170px"/>
+                            <h2>210C</h2>
+                        </div>
+                    </div>
+                
+                </div>
             </div>
+           
         </div>
+        <section class="inner_main">
+            <h2>DISPLAY</h2>
+        </section>
+        
     </div>
 
     <script src="script.js"></script>

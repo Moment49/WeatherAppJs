@@ -187,3 +187,24 @@ if(age < 14 || age > 90){
     console.log("Too young, too old")
 }
 console.log(null || 1)
+
+//Comparisons
+let cheese = '';
+
+if(cheese){
+    console.log('Yay! Cheese available for making cheese on toast')
+}else{
+    console.log("No cheese on toast for you today")
+}
+
+//Logical operators
+let x = 5;
+let y = 6;
+let z = 77;
+let loggedIn = false;
+let userName = '';
+if (( x ===5  || y > 4 || z <= 77) && (loggedIn || userName=='Steve')){
+    console.log('Happy')
+}else{
+    console.log('not happy')
+}
