@@ -25,7 +25,7 @@ menuBtn.addEventListener("click", ()=>{
 })
 
 //Create a variable to hold all values
-const select = document.getElementById("weather");
+const weather = document.getElementById("weather");
 const para = document.querySelector('h3');
 para.style.color = 'red' 
 para.style.textAlign = 'center'
@@ -35,7 +35,7 @@ const rainy = document.getElementById("rainy");
 const snow = document.getElementById("snow");
 
 const changeWeather=()=>{
-    let choice = select.value;
+    let choice = weather.value;
     let temperature = 46;
 
     //Using switch statement to test the conditions
@@ -88,9 +88,48 @@ const changeWeather=()=>{
     
             rainy.style.border = '1px solid white'
             rainy.style.backgroundColor = ''
-
-
     }
  
 }
-select.addEventListener('change', changeWeather);
+weather.addEventListener('change', changeWeather);
+
+//Ternary Operator
+// let isBirthday = false
+// const greeting = isBirthday ?  alert("Happy birthday Mrs Smith\n\
+// we hope you have a great day"): alert("Goodmorning Mrs.Smith");
+
+//Using Ternary Operator to select the theme
+const themeSelect = document.getElementById('theme');
+const nav = document.querySelector('nav');
+const darkBgColor = 'grey'
+const lightBgColor = 'black'
+const textColor = '#121245'
+
+const changeTheme = (bgColor, textColor) => {
+    // let theme = themeSelect.value;
+    // console.log(theme)
+    //Using switch statement to check the selected theme
+    // switch (theme){
+    //     case 'dark':
+    //         nav.style.backgroundColor = lightBgColor;
+    //         aside.style.backgroundColor = darkBgColor
+    //         break
+    //     case 'light':
+    //         nav.style.backgroundColor = darkBgColor;
+    //         aside.style.backgroundColor = lightBgColor
+    //         nav.style.color = textColor 
+    //         break
+    //     default :
+    //     nav.style.backgroundColor = "";
+    //     aside.style.backgroundColor = ""
+    //     nav.style.color = ""      
+    // }
+
+     //Using ternary statement to check the selected theme
+    nav.style.backgroundColor = bgColor;
+    nav.style.color = textColor;
+}
+//Add an onchange event
+themeSelect.addEventListener('change', ()=> theme.value === 'dark'
+   ? changeTheme(lightBgColor, 'White') : theme.value === 'light' ? changeTheme(darkBgColor, 'black') 
+   : changeTheme("", "") );

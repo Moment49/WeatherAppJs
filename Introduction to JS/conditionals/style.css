@@ -6,6 +6,7 @@
 
 
 
+
 .main{
     width: 100%;
     height: auto;
@@ -21,7 +22,7 @@
     left: 0;
     z-index: 5;
     top:0;
-    border-right: 1px solid grey;
+    border-right: 1px solid gainsboro;
     
     
 }
@@ -95,7 +96,6 @@
 }
 .main .main_area nav .forecast_title{
     font-size: 1.2rem;
-    color: whitesmoke;
     margin-left: 80px;
 }
 .main .main_area nav ul{
@@ -331,49 +331,6 @@ text-decoration: underline;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*hamburger*/
 .hamburger{
     width: 30px;
@@ -388,7 +345,7 @@ text-decoration: underline;
  .top, .middle, .bottom{
     width: 30px;
     height: 3px;
-    background: gray;
+    background: whitesmoke;
     position: absolute;
     top: 0;
     left: 0;
