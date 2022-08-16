@@ -17,7 +17,7 @@
                 <span class="bottom"></span>
             </div>
             <ul>
-                <li><i class="fa-solid fa-house"></i></li>
+                <li><a href="#index"><i class="fa-solid fa-house"></i></a></li>
                 <li><i class="fa-solid fa-share-nodes"></i></li>
                 <li><i class="fa-solid fa-face-grin-stars"></i></li>
                 <li><i class="fa-solid fa-share-nodes"></i></li>
@@ -40,12 +40,14 @@
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>  
                     <li><i class="fa-solid fa-thumbtack"></i></li>
                     <li><i class="fa-solid fa-star"></i><li>   
-                     <select>
-                        <option>Theme</option>
-                        <option>dark</option>
-                        <option>light</option>
-                     </select>   
+                    <select id="theme">
+                        <option value="">Theme</option>
+                        <option value="dark">dark</option>
+                        <option value="light">light</option>
+                    </select>
                 </ul>
+              
+                
             </nav>
             <div class="weather_title">
                 <h2>Select the weather type today</h2>
@@ -55,31 +57,70 @@
                     <option value="sunny">Sunny</option>
                     <option value="rainy">Rainy</option>
                     <option value="snowing">Snowing</option>
-                    <option value="overcast">Overcast</option>
                 </select>
-                <h3></h3>
                 <div class="display">
+                    <h3></h3>
                     <div class="display_row">
-                        <div class="col3">
+                        <div class="col3" id="sunny">
                             <img src="./assets/sun-weather-forecast-glossy-icon-vector-425863-removebg-preview.png" width="170px"/>
-                            <h2>290C</h2>
+                            <h2>290‎°C</h2>
                         </div>
-                        <div class="col3">
+                        <div class="col3" id="rainy">
                             <img src="./assets/Rain-removebg-preview-removebg-preview.png" width="170px"/>
-                            <h2>-21C</h2>
+                            <h2>-21‎°C</h2>
                         </div>
-                        <div class="col3">  
+                        <div class="col3" id="snow"> 
+                            <a name = 'index'></a> 
                             <img src="./assets/sun-weather-forecast-glossy-icon-vector-425863-removebg-preview.png" width="170px"/>
-                            <h2>210C</h2>
+                            <h2>210‎°C</h2>
                         </div>
                     </div>
-                
+                   
                 </div>
             </div>
            
         </div>
         <section class="inner_main">
-            <h2>DISPLAY</h2>
+            <div class="wrapper">
+                <h3>Current Weather</h3>
+                <span>9:42 pm</span>
+                <div class="current_weather_title">
+                   <img src="https://assets.msn.com/weathermapdata/1/static/svg/72/v2/card_fix_partlysunny/MostlyCloudyNightV2.svg" width="170px"/>  
+                   <h2>75‎°F</h2>      
+                   <div class="weather_feeling">
+                    <h4>Mostly Cloudy<i class="fa-solid fa-calendar"></i></h4>
+                    <p>FEELS LIKE 75‎°</p>
+                   </div>           
+                </div>
+                <div class="title">
+                    <p>The skies will be mostly cloudy. The low will be 74°.</p>
+                </div>
+
+                <div class="weather_variables">
+                    <div class="row1">
+                        <div class="col5">
+                            <h5><a href="#">Wind</a><i class="fa-solid fa-bolt"></i></h5>
+                            <p>7 mph</p>
+                        </div>
+                        <div class="col5">
+                            <h5><a href="#">Humidity</a><i class="fa-solid fa-bolt"></i></h5>
+                            <p>94%</p>
+                        </div>
+                        <div class="col5">
+                            <h5><a href="#">Visibility</a><i class="fa-solid fa-bolt"></i></h5>
+                            <p>4.3 mi</p>
+                        </div>
+                        <div class="col5">
+                            <h5><a href="#">Pressure</a><i class="fa-solid fa-bolt"></i></h5>
+                            <p>29.91 in</p>
+                        </div>
+                        <div class="col5">
+                            <h5><a href="#">Dew Point</a><i class="fa-solid fa-bolt"></i></h5>
+                            <p>73 %</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
     </div>
