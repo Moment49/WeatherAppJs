@@ -82,12 +82,14 @@ let currentUser = "Elvis Chimdi"
 // console.log(interest);
 
 //Numbers (Increment and Decrement)
-// let x = 5;
-//     x ++;
+let x = 5;
+    x ++;
+    x = x - 1;
 //     x ++;
 //     x --;
-// let z = x    
-// console.log(z)    
+// // let z = x    
+// console.log(z) 
+console.log(x)   
 
 //Exponential
 // let a = 5;
@@ -132,18 +134,18 @@ let currentUser = "Elvis Chimdi"
 //     x = x * x;
 // }
 // console.log(x)
-console.log(typeof Infinity)
-console.log(Infinity)
-console.log( 1/0)
+// console.log(typeof Infinity)
+// console.log(Infinity)
+// console.log( 1/0)
 
-//NAN examples
-console.log( 100 / 'orange')
-let fruits  = '0';
-let persons = 1;
-console.log( persons /  fruits)
+// //NAN examples
+// console.log( 100 / 'orange')
+// let fruits  = '0';
+// let persons = 1;
+// console.log( persons /  fruits)
 
-let fruit = NaN
-console.log(fruit**0);
+// let fruit = NaN
+// console.log(fruit**0);
 
 
 
