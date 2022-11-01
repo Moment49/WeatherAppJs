@@ -121,7 +121,7 @@ const arrStr = [...str];
 console.log(arrStr);
 
 //Function Exp
-function add ( a, b){
+function add (a, b){
     return a + b;
 }
 
